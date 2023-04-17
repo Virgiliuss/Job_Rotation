@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+    float total;
+    //faturamento mensal por estado
+    float SP = 67836.43;
+    float RJ = 36678.66;
+    float MG = 29229.88;
+    float ES = 27165.48;
+    float outros = 19849.53;
+    
+    
+    total = (SP + RJ + MG + ES + outros);
+    
+    printf("100 por cento do faturamento consiste em: %.2f", total);
+      printf("\nPorcentagem de SP: %.2f por cento", (SP*100)/total);
+        printf("\nPorcentagem de RJ: %.2f por cento", (RJ*100)/total);
+      printf("\nPorcentagem de MG: %.2f por cento", (MG*100)/total);
+    printf("\nPorcentagem de ES: %.2f por cento", (ES*100)/total);
+
+    return 0;
+}
