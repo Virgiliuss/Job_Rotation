@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+    char string[50];
+    int i;
+
+    printf("Digite seu nome: ");
+    gets(string);
+
+    printf("Seu nome eh %s\n", string);
+    printf("O inverso do seu nome eh:");
+
+    for(i=strlen(string); i>=0; i--)
+    {
+        printf("%c", string[i]);
+    }
+
+}
