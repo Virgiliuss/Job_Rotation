@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, i, prox, encontrado;
+    int prim = 0;
+    int seg = 1;
+    
+    printf("Digite um número: ");
+    scanf("%d", &n);
+    printf("Sequencia de Finobacci: ");
+    
+    //calculo Fibonacci
+    for (i = 0; i < 15; i++){
+        if (i<=1){
+            prox = i;
+        }else{
+            prox = prim + seg;
+                prim = seg;
+            seg = prox;
+        }
+        
+        printf("%d", prox);
+        
+        //TESTE para encontrar N na sequencia
+        if (n == prox){
+            encontrado = 1;
+        }
+    }
+    if(encontrado){
+        printf("\nO numero %d faz parte da sequencia.", n);
+    } else{
+        printf("\nO numero %d nao faz parte da sequencia.", n);
+    }
+    
+    return 0;
+}
